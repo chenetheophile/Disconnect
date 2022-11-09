@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Disconnect" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/BlueBrightNavy</item>
+        <item name="colorPrimaryVariant">@color/BlueCobalt</item>
+        <item name="colorOnPrimary">@color/BlueIceberg</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/BlueYale</item>
+        <item name="colorSecondaryVariant">@color/BlueYInMn</item>
+        <item name="colorOnSecondary">@color/GreyDavys</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/VioletRussianlight</item>
+    </style>
+
+    <style name="Theme.Disconnect.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Disconnect.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Disconnect.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
