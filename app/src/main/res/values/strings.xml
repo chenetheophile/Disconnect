@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Disconnect</string>
+    <string name="package_name">com.example.disconnect</string>
     <string name="title_activity_vacance">VacanceActivity</string>
     <string name="title_activity_Gmail">GmailActivity</string>
     <string name="title_activity_Outlook">OutlookActivity</string>
@@ -22,6 +23,17 @@
     <string name="contenue">Entrez la réponse automatique</string>
     <string name="reponse">Réponse aux messages:</string>
     <string name="reponseAutomatiqueDefault">Aucun message enregistré</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="API_KEY">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</string>
+    <string name="Client_ID">1083110443747-k7pid5v3sn96mfovv4am9kqvdgqsf8qc.apps.googleusercontent.com</string>
+    <string name="redirect_URI">com.example.disconnect:/oauth2redirect</string>
+    <string name="objetTextView">Objet:</string>
+    <string name="objetContenue">Entrez l\'objet</string>
+    <string name="signature">Inclure la signature</string>
+    <string name="loginactivity_grantsfails_quit" />
+    <string name="http_code_400" />
+    <string name="http_code_401" />
+    <string name="http_code_403" />
+    <string name="http_code_404" />
+
+
 </resources>

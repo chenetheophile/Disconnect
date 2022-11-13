@@ -9,6 +9,10 @@
         <item name="colorSecondary">@color/BlueYale</item>
         <item name="colorSecondaryVariant">@color/BlueYInMn</item>
         <item name="colorOnSecondary">@color/GreyDavys</item>
+        
+        <item name="android:textColorHint">@color/BlueSky</item>
+        <item name="android:textColor">@color/BlueIceberg</item>
+        <item name="android:textColorPrimary">@color/BlueIceberg</item>
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/VioletRussianlight</item>
     </style>

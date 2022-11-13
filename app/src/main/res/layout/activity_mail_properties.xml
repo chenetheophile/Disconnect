@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:translationZ="90sp"
+    tools:context=".ui.main.MailPropertiesActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/viewMail"
+            android:layout_width="348dp"
+            android:layout_height="272dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/tab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Switch
+            android:id="@+id/signatureSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:minHeight="48dp"
+            android:text="@string/signature"
+            android:textColor="@color/BlueIceberg"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMail" />
+
+        <EditText
+            android:id="@+id/reponseMailEditText"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/contenue"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:minHeight="48dp"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/reponse"
+            android:textColor="@color/BlueIceberg"
+            android:textSize="@dimen/textViewSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/viewMail"
+            app:layout_constraintTop_toTopOf="@+id/viewMail" />
+
+        <Button
+            android:id="@+id/sauvegarderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/corner_round"
+            android:text="@string/boutonSauvegarder"
+            app:icon="@drawable/ic_baseline_check_24"
+            app:iconTint="@color/GreenMantis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signatureSwitch" />
+
+        <TextView
+            android:id="@+id/actualMessageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:maxWidth="290dp"
+            android:maxHeight="100dp"
+            android:maxLines="5"
+            android:minWidth="290dp"
+            android:minHeight="100dp"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="@color/BlueIceberg"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textViewMail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Message actuel:"
+            android:textColor="@color/BlueIceberg"
+            android:textSize="@dimen/textViewSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/reponseMailEditText"
+            app:layout_constraintTop_toBottomOf="@+id/sauvegarderButton" />
+
+        <EditText
+            android:id="@+id/editTextTextObjetMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="@string/objetContenue"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.555" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/objetTextView"
+            android:textSize="@dimen/textViewSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewMail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMail" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/objetTextView"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewMail2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMail2" />
+
+        <TextView
+            android:id="@+id/objetMailActuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
