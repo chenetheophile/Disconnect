@@ -10,6 +10,7 @@
         android:maxSdkVersion="22" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,37 +19,23 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/logodisconnect_foreground"
+        android:icon="@mipmap/logodisconnect2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/logodisconnect_foreground"
+        android:roundIcon="@mipmap/logodisconnect2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Disconnect"
         tools:targetApi="31">
+
         <activity
-            android:name=".ui.main.Auth"
+            android:name=".ui.activity.MailPropertiesActivity"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.main.MailPropertiesActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Outlook"
-            android:exported="false"
-            android:label="@string/title_activity_Outlook"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".VacanceActivity"
+            android:name=".ui.activity.VacanceActivity"
             android:exported="false"
             android:label="@string/title_activity_vacance"
             android:screenOrientation="portrait"
@@ -59,7 +46,7 @@
         </activity>
 
         <receiver
-            android:name=".SmsReceiver"
+            android:name=".ui.other.SmsReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -68,7 +55,7 @@
         </receiver>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -80,6 +67,19 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="msauth"
+                    android:host="com.example.disconnect"
+                    android:path="/DWaB9ep3DjxzSMw5Azv544UsSqk=" />
+            </intent-filter>
         </activity>
     </application>
 

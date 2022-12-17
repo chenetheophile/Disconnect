@@ -24,5 +24,4 @@
 
     <style name="Theme.Disconnect.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.Disconnect.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

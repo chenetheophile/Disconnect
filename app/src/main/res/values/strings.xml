@@ -1,20 +1,17 @@
 <resources>
     <string name="app_name">Disconnect</string>
-    <string name="package_name">com.example.disconnect</string>
     <string name="title_activity_vacance">VacanceActivity</string>
-    <string name="title_activity_Gmail">GmailActivity</string>
-    <string name="title_activity_Outlook">OutlookActivity</string>
+    <string name="tab_1">Email</string>
+    <string name="tab_2">SMS</string>
 
     <string name="smsActif">SMS Actif</string>
     <string name="mailActif">Mail Actif</string>
+    <string name="gmailActif">Gmail Actif</string>
+    <string name="outlookActif">Outlook Actif</string>
 
-    <string name="outlook">Outlook</string>
-    <string name="gmail">Gmail</string>
-
-
-    <string name="tab_1">Mail Provider</string>
-    <string name="tab_2">SMS</string>
-
+    <string name="mailSauvegarder">Message sauvegardé et activé</string>
+    <string name="dateAPartirDeQuand">A partir de quand ?</string>
+    <string name="dateJusquAQuand">Jusqu\'à quand ?</string>
     <string name="boutonSauvegarder">Sauvegarder</string>
 
     <string name="configurer">Configuré</string>
@@ -23,17 +20,24 @@
     <string name="contenue">Entrez la réponse automatique</string>
     <string name="reponse">Réponse aux messages:</string>
     <string name="reponseAutomatiqueDefault">Aucun message enregistré</string>
-    <string name="API_KEY">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</string>
-    <string name="Client_ID">1083110443747-k7pid5v3sn96mfovv4am9kqvdgqsf8qc.apps.googleusercontent.com</string>
-    <string name="redirect_URI">com.example.disconnect:/oauth2redirect</string>
+    <string name="Client_ID_Outlook">5d736a00-bb25-42cd-ac30-7c20b13e98de</string>
+    <string name="WebClient_ID">1083110443747-k7pid5v3sn96mfovv4am9kqvdgqsf8qc.apps.googleusercontent.com</string>
+    <string name="WebClient_secret">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</string>
     <string name="objetTextView">Objet:</string>
     <string name="objetContenue">Entrez l\'objet</string>
-    <string name="signature">Inclure la signature</string>
-    <string name="loginactivity_grantsfails_quit" />
-    <string name="http_code_400" />
-    <string name="http_code_401" />
-    <string name="http_code_403" />
-    <string name="http_code_404" />
+    <string name="du">Du:</string>
+    <string name="au">Au:</string>
+    <string name="DateAlertTitle">Date pré-configuré</string>
+    <string name="DateQuestion">Des dates ont été pré-configuré. Souhaitez-vous activez votre réponse automatique pour ces dates :\n\n</string>
+    <string name="retour">Retour</string>
 
 
+    <string name="erreurCalendrier">La date de fin doit être supérieur à celle de début.</string>
+    <string name="erreurActivationMail">Un problème est surevnue. Impossible d\'activer la réponse automatique. Réessayer plus tard</string>
+    <string name="erreurDesactivationMail">Un problème est surevnue. Impossible de désactiver la réponse automatique. Réessayer plus tard</string>
+    <string name="erreurSauvegarde">Vous ne pouvez pas sauvegarder car le contenue et l\'objet ne peuvent pas être vide</string>
+
+    <string name="connexionSilentMessage">Connexion en cours…</string>
+    <string name="connexionSilentMessageSuccess">Connecté</string>
+    <string name="connexionInteractiveMessage">Configuration de l\'email…</string>
 </resources>

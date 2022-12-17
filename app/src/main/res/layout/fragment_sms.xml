@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#00FFFFFF"
     android:translationZ="90sp"
-    tools:context=".ui.main.SMSFragment">
+    tools:context=".ui.fragment.SMSFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

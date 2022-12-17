@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="modeVacanceButton">@color/GreyDavys</color>
 
     <color name="BlueIceberg">#8DADCE</color>
-    <color name="BlueTufts">#588FC6</color>
     <color name="BlueBrightNavy">#3E78B2</color>
     <color name="BlueGreen">#1F62AD</color>
     <color name="BlueCobalt">#004BA8</color>
     <color name="BlueYale">#254F81</color>
     <color name="BlueYInMn">#38516E</color>
     <color name="GreyDavys">#4A525A</color>
-    <color name="BlackRaisin">#24272B</color>
-    <color name="BlackRich">#07070A</color>
 
 
     <color name="BlueSky">#9BD3E9</color>
     <color name="BlueBaby">#97DFFC</color>
-    <color name="BlueShadow">#858AE3</color>
-    <color name="BlueSlate">#7364D2</color>
-    <color name="PurplePlump">#613DC1</color>
-    <color name="Purple">#5829A7</color>
     <color name="BlueVioletColorWheel">#4E148C</color>
     <color name="VioletRussianlight">#3D0E61</color>
-    <color name="VioletRussianDark">#2C0735</color>
 
 
     <color name="GreenMantis">#6BBF59</color>
     <color name="GreenPigment">#08A045</color>
-    <color name="GreenBottle">#0B6E4F</color>
-    <color name="GreenRich">#073B3A</color>
 
 </resources>
