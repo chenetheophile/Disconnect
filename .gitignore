@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/src/main/res/raw/outlook_credentials.json
+app/src/main/AndroidManifest.xml
+.idea/gradle.xml
+.idea/vcs.xml
+.idea/gradle.xml

@@ -1,5 +1,6 @@
 package com.example.disconnect.ui.fragment;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -301,24 +302,27 @@ public class MailProviderFragment extends Fragment {
         executorService.execute(()->{
             new OutlookAuth(ctx,false);
         });
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        outlook=new Outlook(ctx);
-        if (nbRetryGmail > 3 || nbRetryOutlook > 3) {
-            if (service.equals(Gmail.class.getSimpleName())) {
-                mailEnablingError(switchGmail, service, active);
-            } else if (service.equals(Outlook.class.getSimpleName())) {
-                mailEnablingError(switchOutlook, service, active);
+        ((Activity)ctx).runOnUiThread(()->{
+            try {
+                Thread.sleep(1000);
+                outlook=new Outlook(ctx);
+                if (nbRetryGmail > 3 || nbRetryOutlook > 3) {
+                    if (service.equals(Gmail.class.getSimpleName())) {
+                        mailEnablingError(switchGmail, service, active);
+                    } else if (service.equals(Outlook.class.getSimpleName())) {
+                        mailEnablingError(switchOutlook, service, active);
+                    }
+                    return;
+                }
+                if (active) {
+                    activateMail(service, starting, ending);
+                } else {
+                    deactivateMail(service);
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            return;
-        }
-        if (active) {
-            activateMail(service, starting, ending);
-        } else {
-            deactivateMail(service);
-        }
+        });
+
     }
 }
